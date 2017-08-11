@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      div {
+       padding: 10px 5px 5px 5px;
+        background:#dae6ef;
+        width:50%;
+        
+      }
+      h1, div, p{
+       text-align: center;
+       display:block;
+      }
+      p{
+        padding-top:10px;
+        background: #e8ecef;
+        margin:10px 50px 10px 50px;
+        height :40px;
+      }
+    </style>  
+  </head>
+  <body>
+     <!-- Write your markup here  -->
+     <h1>Astro Weight Calculator</h1>
+     <center>
+       <div><label>Your Weight</label>
+        <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+        <label>Select a Planet</label>
+        <select id="planets"></select>
+        <button id="calculate-button" onClick="handleClickEvent()">Calculate</button>
+        <br><input type="checkbox" id="check_box" onclick="onClickEvent()" />
+        <label>Check to remove Pluto from list</label>
+        <br><label>Enter New Planet Name</label>
+        <input id="new_planet" type="text" />
+        <label>Enter New Multiplier</label>
+        <input id="new_mul" type="text" />
+        <button id="add" onClick="onclick_add()">Add</button>
+        <p id="output"></p>
+      </div></center>  
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
